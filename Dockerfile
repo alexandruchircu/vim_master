@@ -9,8 +9,8 @@ RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold"
 
 RUN apt-get install -y vim git sudo build-essential
 
-RUN groupadd alex
-RUN useradd -m -d /home/dev -g alex -G sudo -s /bin/bash dev
+RUN groupadd dev
+RUN useradd -m -d /home/dev -g dev -G sudo -s /bin/bash dev
 
 
 # Clean up APT when done.

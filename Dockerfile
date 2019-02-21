@@ -40,6 +40,10 @@ RUN git clone https://github.com/VundleVim/Vundle.vim.git /home/dev/.vim/bundle/
 RUN vim +'PluginInstall --sync' +qall
 
 
+# You should mount your source files here, in ~/project
+RUN mkdir -p /home/dev/project
+
+
 USER root
 
 # Clean up APT when done.

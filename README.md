@@ -8,8 +8,8 @@ Build the container:
 > $ docker build -t <container_tag> .
 
 Start a container in the background:
-> $ docker run -d -it -v <path_to_src_dir>:/home/dev/project --name <somename> <container_tag> /bin/bash
+> $ docker run -d -it -v <path_to_src_dir>:/home/dev/project --name <some_name> <container_tag> /bin/bash
 
 Attach to the container:
-> $ docker exec -it -u dev <somename> /bin/bash
+> $ docker exec -it -u dev <some_name> /bin/bash
 

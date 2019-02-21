@@ -37,7 +37,7 @@ COPY --chown=dev:dev support_files/global_gitconfig /home/dev/.gitconfig
 RUN mkdir -p /home/dev/.vim/bundle
 COPY --chown=dev:dev support_files/vimrc /home/dev/.vimrc
 RUN git clone https://github.com/VundleVim/Vundle.vim.git /home/dev/.vim/bundle/Vundle.vim
-RUN vim +'PluginInstall --sync' +qall
+RUN vim +PluginInstall +qall
 
 
 # You should mount your source files here, in ~/project

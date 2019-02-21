@@ -16,7 +16,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Utility
-Plugin 'wakatime/vim-wakatime'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'ervandew/supertab'
@@ -37,7 +36,6 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'calorie/vim-typing-sound'
 
 " Generic Programming Support 
-Plugin 'jakedouglas/exuberant-ctags'
 Plugin 'honza/vim-snippets'
 Plugin 'Townk/vim-autoclose'
 Plugin 'tomtom/tcomment_vim'
@@ -85,6 +83,7 @@ Plugin 'tpope/vim-fugitive'
 "sed_elm"Plugin 'lambdatoast/elm.vim'
 
 " Theme / Interface
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'AnsiEsc.vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'vim-airline/vim-airline'
@@ -145,7 +144,7 @@ let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
 set cursorline
 
 " Theme and Styling 
-syntax on
+syntax enable
 set t_Co=256
 
 " if (has("termguicolors"))
@@ -153,8 +152,13 @@ set t_Co=256
 " endif
 
 "let base16colorspace=256  " Access colors present in 256 colorspace
-silent! colorscheme challenger_deep
-let g:challenger_deep_termcolors = 256
+"silent! colorscheme challenger_deep
+"let g:challenger_deep_termcolors = 256
+
+" You can change the background to 'dark'
+set background=light
+let g:solarized_termcolors=256
+silent! colorscheme solarized
 
 let g:spacegray_underline_search = 1
 let g:spacegray_italicize_comments = 1

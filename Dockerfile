@@ -7,7 +7,7 @@ CMD ["/sbin/my_init"]
 
 RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold"
 
-RUN apt-get install -y vim git sudo build-essential exuberant-ctags
+RUN apt-get install -y vim vim-nox git sudo build-essential exuberant-ctags
 
 
 RUN groupadd dev

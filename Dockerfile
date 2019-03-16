@@ -5,7 +5,7 @@ FROM phusion/baseimage:0.11
 CMD ["/sbin/my_init"]
 
 
-RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold"
+RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold" --fix-missing
 
 RUN apt-get install -y vim vim-nox git sudo build-essential exuberant-ctags
 

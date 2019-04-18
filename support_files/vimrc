@@ -31,9 +31,7 @@ Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'gilsondev/searchtasks.vim'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'tpope/vim-dispatch'
-Plugin 'jceb/vim-orgmode'
 Plugin 'tpope/vim-speeddating'
-Plugin 'calorie/vim-typing-sound'
 
 " Generic Programming Support 
 Plugin 'honza/vim-snippets'
@@ -41,9 +39,11 @@ Plugin 'Townk/vim-autoclose'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tobyS/vmustache'
 Plugin 'janko-m/vim-test'
-Plugin 'maksimr/vim-jsbeautify'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'neomake/neomake'
+
+" Javascript
+Plugin 'maksimr/vim-jsbeautify'
 
 " Markdown / Writting
 Plugin 'reedes/vim-pencil'
@@ -55,10 +55,10 @@ Plugin 'LanguageTool'
 Plugin 'kablamo/vim-git-log'
 Plugin 'gregsexton/gitv'
 Plugin 'tpope/vim-fugitive'
-"Plugin 'jaxbot/github-issues.vim'
+Plugin 'jaxbot/github-issues.vim'
 
 " PHP Support
-"Plugin 'phpvim/phpcd.vim'
+"sed_php"Plugin 'lvht/phpcd.vim'
 "sed_php"Plugin 'tobyS/pdv'
 
 " Erlang Support
@@ -107,7 +107,7 @@ Plugin 'colepeters/spacemacs-theme.vim'
 Plugin 'dylanaraps/wal.vim'
 Plugin 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
-" Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

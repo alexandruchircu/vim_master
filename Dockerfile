@@ -12,6 +12,7 @@ RUN apt-get install -y vim vim-nox git sudo build-essential exuberant-ctags
 
 RUN groupadd dev
 RUN useradd -m -d /home/dev -g dev -G sudo -s /bin/bash dev
+RUN echo "dev:dev" | chpasswd
 
 
 COPY support_files/fzf-0.17.5-linux_amd64.tgz /tmp/fzf.tgz

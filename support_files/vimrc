@@ -143,6 +143,10 @@ let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
 " Enable highlighting of the current line
 set cursorline
 
+" Mark columns 80 and 120
+set colorcolumn=80,120
+highlight ColorColumn ctermbg=0 guibg=lightgrey 
+
 " Theme and Styling 
 syntax enable
 set t_Co=256

@@ -159,8 +159,8 @@ set t_Co=256
 "silent! colorscheme challenger_deep
 "let g:challenger_deep_termcolors = 256
 
-" You can change the background to 'dark'
-set background=light
+" You can change the background to 'dark' or 'light'
+set background=dark
 let g:solarized_termcolors=256
 silent! colorscheme solarized
 
